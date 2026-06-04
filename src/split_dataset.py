@@ -3,7 +3,7 @@ import shutil
 import random
 
 # CONFIG
-SOURCE_DIR = 'Data'  # Adjust this if your dataset folder is named differently
+SOURCE_DIR = 'Data'  
 DEST_DIR = 'data_split'
 CLASSES = ['MildDemented', 'ModerateDemented', 'NonDemented', 'VeryMildDemented']
 SPLIT_RATIOS = {'train': 0.7, 'val': 0.15, 'test': 0.15}
