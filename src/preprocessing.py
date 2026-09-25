@@ -1,5 +1,6 @@
 # src/preprocessing.py
 import os
+#keras utility - read images from folders, resize them,normalizes pixel values,create batches,perform data augmentation
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 BASE_DIR   = 'data_split'

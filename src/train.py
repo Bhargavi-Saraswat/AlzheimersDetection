@@ -59,7 +59,7 @@ reduce_lr = ReduceLROnPlateau(
 )
 
 # ── 5. Phase 1: Top layers only (base frozen) ─────────────────
-print("\n====== PHASE 1: Training top layers — 15 epochs ======")
+print("\n====== PHASE 1: Training top layers — 20 epochs ======")
 history1 = model.fit(
     train_gen,
     epochs=20,
@@ -69,7 +69,7 @@ history1 = model.fit(
 )
 
 # ── 6. Phase 2: Unfreeze last 30 layers and fine-tune ─────────
-print("\n====== PHASE 2: Fine-tuning — 20 epochs ======")
+print("\n====== PHASE 2: Fine-tuning — 30 epochs ======")
 base_model.trainable = True
 for layer in base_model.layers[:-30]:
     layer.trainable = False
