@@ -97,7 +97,7 @@ if uploaded_file is not None:
     with col1:
         st.markdown("**Uploaded MRI Scan:**")
         image = Image.open(uploaded_file).convert('RGB')
-        st.image(image, use_column_width=True)
+        st.image(image, use_container_width=True)
 
     # Preprocess image
     img_resized = image.resize(IMG_SIZE)
